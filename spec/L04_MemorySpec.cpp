@@ -50,19 +50,19 @@ namespace spec
 		[TestMethod, Timeout(3000)]
 		void TestmemoryFirstByte(){
 			Assert::AreEqual(0, memoryFirstByte(0), L"memoryFirstByte(0) failed", 1, 2);
-			Assert::AreEqual(1, memoryFirstByte(0xffffff), L"memoryFirstByte(0xffffff) failed", 1, 2);
-			//Assert::AreEqual(___, memoryFirstByte(0x64), L"memoryFirstByte(0x64) failed", 1, 2);
-		//	Assert::AreEqual(___, memoryFirstByte(0x40000000), L"memoryFirstByte(0x40000000) failed", 1, 2);
-	//		Assert::AreEqual(___, memoryFirstByte(0x7fffffff), L"memoryFirstByte(0x7fffffff) failed", 1, 2);
+			Assert::AreEqual(-1, memoryFirstByte(0xffffff), L"memoryFirstByte(0xffffff) failed", 1, 2);
+			Assert::AreEqual(100, memoryFirstByte(0x64), L"memoryFirstByte(0x64) failed", 1, 2);
+			Assert::AreEqual(0, memoryFirstByte(0x40000000), L"memoryFirstByte(0x40000000) failed", 1, 2);
+			Assert::AreEqual(-1, memoryFirstByte(0x7fffffff), L"memoryFirstByte(0x7fffffff) failed", 1, 2);
 		}
 
 		[TestMethod, Timeout(3000)]
 		void TestmemoryLastByte(){
-			Assert::AreEqual(___, memoryLastByte(0), L"memoryFirstByte(0) failed", 1, 2);
-			Assert::AreEqual(___, memoryLastByte(0xffffff), L"memoryFirstByte(0xffffff) failed", 1, 2);
-			Assert::AreEqual(___, memoryLastByte(0x64), L"memoryFirstByte(0x64) failed", 1, 2);
-			Assert::AreEqual(___, memoryLastByte(0x40000000), L"memoryFirstByte(0x40000000) failed", 1, 2);
-			Assert::AreEqual(___, memoryLastByte(0x7fffffff), L"memoryFirstByte(0x7fffffff) failed", 1, 2);
+			Assert::AreEqual(0, memoryLastByte(0), L"memoryFirstByte(0) failed", 1, 2);
+			Assert::AreEqual(0, memoryLastByte(0xffffff), L"memoryFirstByte(0xffffff) failed", 1, 2);
+			Assert::AreEqual(0, memoryLastByte(0x64), L"memoryFirstByte(0x64) failed", 1, 2);
+			Assert::AreEqual(64, memoryLastByte(0x40000000), L"memoryFirstByte(0x40000000) failed", 1, 2);
+			Assert::AreEqual(0x7f, memoryLastByte(0x7fffffff), L"memoryFirstByte(0x7fffffff) failed", 1, 2);
 		}
 
 		[TestMethod, Timeout(3000)]
