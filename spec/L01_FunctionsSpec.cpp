@@ -53,62 +53,62 @@ namespace spec
         [TestMethod, Timeout(3000)]
         void TestsumOfDigitsSingleDigits(){
             int sum = sumOfDigits(8);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(8, sum);
             
             sum = sumOfDigits(0);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(0, sum);
         }
         
         [TestMethod, Timeout(3000)]
         void TestsumOfDigitsDoubleDigits(){
             int sum = sumOfDigits(89);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(17, sum);
             
             sum = sumOfDigits(10);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(1, sum);
         }
         
         [TestMethod, Timeout(3000)]
         void TestsumOfDigitsMultipleDigits(){
             int sum = sumOfDigits(8539);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(25, sum);
             
             sum = sumOfDigits(103323);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(12, sum);
             
             sum = sumOfDigits(99999);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(45, sum);
         }
         
         // mysterious one
         [TestMethod, Timeout(3000)]
         void TestsumOfDigitsMysterySingleDigits(){
             int sum = sumOfDigitsMystery(8);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(8, sum);
             
             sum = sumOfDigitsMystery(0);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(0, sum);
         }
         
         [TestMethod, Timeout(3000)]
         void TestsumOfDigitsMysteryDoubleDigits(){
             int sum = sumOfDigitsMystery(89);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(8, sum);
             
             sum = sumOfDigitsMystery(10);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(1, sum);
         }
         
         [TestMethod, Timeout(3000)]
         void TestsumOfDigitsMysteryMultipleDigits(){
             int sum = sumOfDigitsMystery(8539);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(7, sum);
             
             sum = sumOfDigitsMystery(103323);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(3, sum);
             
             sum = sumOfDigitsMystery(99999);
-            Assert::AreEqual(___, sum);
+            Assert::AreEqual(9, sum);
         }
         
         [TestMethod, Timeout(3000)]
@@ -136,7 +136,7 @@ namespace spec
         [TestMethod, Timeout(3000)]
         void TestheightOfTreeEmptyTree(){
             int height = heightOfTree(NULL);
-            Assert::AreEqual(___, height);
+            Assert::AreEqual(0, height);
         }
 
 		[TestMethod, Timeout(3000)]
